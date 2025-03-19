@@ -1,0 +1,166 @@
+/* mini reset */
+* {
+    margin: 0; /* espacamento | distancia da borda para fora */
+    padding: 0; /* espacamento | distancia da borda para dentro */
+    border: 0;
+    /* utiliza espaco interno mantem tamanho width e height */
+    box-sizing: border-box; 
+}
+
+/* 
+# - seletor por id
+div - seletor por nome da tag
+. - selector por classe
+*/
+body {
+    width: 100vw;
+    display: flex;
+    flex-direction: column; 
+    /*justify-content: center; Justify-content alinha sempre na mesma direção do flex*/
+    align-items: center;
+}   
+/*Formatação cabeçalho*/
+.area-header {
+    height: 100px;
+    width: 100%;
+    display: flex; 
+    padding-left: 4rem;
+    padding-right: 4rem;
+    border-bottom: 1px solid #ccc;
+    box-shadow: 0 4px 6px -6px #222;
+}
+/*Foratação área logo*/
+.area-logo {
+    height: 100%;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.area-logo img {
+    width: 50px;
+    height: 50px;
+}
+/*Formatação área de naveção*/
+.area-nav {
+    height: 100%;
+    flex: 1;
+}
+
+.nav-list {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+
+.nav-list-item {
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 15px;
+    color: #1e3932;
+    text-transform: uppercase;
+    letter-spacing: 0.7;
+}
+
+.nav-list-item:hover{
+    color: #008248;
+    cursor: pointer;
+}
+
+.area-nav-history {
+    height: 100%;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-history-img {
+    width: 100px;
+}
+.nav-store-location {
+    width: 160px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    /*width: 1440px;*/
+    /*width: 75%;*/
+    width: 75vw; /*Pega 75% do tamanho do pai (body)*/
+}
+
+.banner-area {
+    height: 428px;
+    background-image: url(../images/banner01.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.banner-text-area {
+    height: 100%;
+    width: 60%;
+    padding: 32px;
+    display: flex;
+    align-items: flex-end;
+    color: #fff;
+    font-size: 64px;
+    text-transform: uppercase;
+}
+
+
+.banner-text-left {
+    width: 100%;
+    /*border: 2px solid red;*/
+    height: 428px;
+    margin-top: 30px;
+    display: flex;
+}
+
+.banner-text {
+    background-color: #d4e9e2;
+    width: 50%;
+    display: flex; /*Por padrão do display: flex é sempre em linha*/
+    flex-direction: column; /*Mudar o display para coluna*/
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+.banner-btn-area {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+/*Formatação do botão*/
+.banner-btn-area a {
+    padding: 8px 12px;
+    border: 2px solid #1e3932;
+    border-radius: 20px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    font-size: 18px; /*Por padrão a fonte vem com 16px*/
+    text-decoration: none;
+}
+
+.banner-area-right {
+    width: 50%;
+}
+
+/*Sempre colocar tamanho da img*/
+/*100% dos 50% da banner-area-rigth*/
+.banner-area-right img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; /*Faz o mesmo papel do background-size*/
+    object-position: center;
+}
