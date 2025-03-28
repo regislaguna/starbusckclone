@@ -164,3 +164,70 @@ body {
     object-fit: cover; /*Faz o mesmo papel do background-size*/
     object-position: center;
 }
+
+/* FOOTER - INICIO */
+.footer-area{
+   display: flex;
+    height: 704px;
+    width: 100%;
+    padding: 80px;
+    position: relative;
+    justify-content: center;
+    margin-top: 30px;
+
+    
+}
+
+.footer-content{
+    height: 100%;
+    width: 100%;
+     
+}
+
+.footer-row{
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    }
+
+.footer-col{
+    display: flex;
+    width: 100%;
+    max-width: 180px;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 3.2rem;
+    position: relative;
+    
+  
+}
+
+.col-title{
+    display: flex;
+    flex-direction: column;
+          
+}
+
+.footer.col ul{
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+          
+}
+
+.footer-col li{
+    display: flex;
+    list-style: none;
+    padding: 10px;
+    
+}
+
+.footer-col li a{
+    display: flex;
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(133, 128, 122);
+}
+.footer-col li a:hover{
+    color: #1e3932;
+}
